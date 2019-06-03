@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Primeiros Passos com DOM</title>
+    <style>
+        body{
+            background: rgb(55, 143, 243);
+            color: white;
+            font: normal 18pt Arial;
+        }
+        
+    </style>
+</head>
+<body>
+    <H1>Iniciando com Dom</H1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong id="dom">DOM</strong> em javaScript.</p>
+    <div id="clik">Clique aqui</div>
+
+
+
+    <script>
+        /*
+        var corpo = window.document.body;
+        var p1 = window.document.getElementsByTagName("p")[0];
+        var dom = window.document.getElementById("dom");
+        var div = window.document.getElementsByTagName("div")[0];
+
+        div.style.background = "blue";
+        div.style.textAlign = "center";
+        
+
+        dom.style.color = "red";
+        corpo.style.background = "black";
+        corpo.style.margin = 0;
+        p1.style.color = "red";
+        */
+
+        /*Queryselector metodo mais usado e o mais recente!!*/
+        var d = window.document.querySelector("div#clik");
+
+        d.style.color = "red";
+    
+    </script>
+</body>
+</html>
