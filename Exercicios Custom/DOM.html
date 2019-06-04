@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculadora Utilizando DOM</title>
+    <style>
+    body{
+        margin: 20px;
+        text-align: center;
+        background: #5433FF;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #A5FECB, #20BDFF, #5433FF);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #A5FECB, #20BDFF, #5433FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+    }
+    h1{
+        font: bold 30pt arial;
+        color: black;
+    }
+    p{
+        color: black;
+        font: normal 25pt arial;
+    }
+    p > strong{
+        color: #b84b4b;
+    }
+    #v1,#v2, #v3, #v4, #v5, #v6{
+        width: 100px;
+        height: 25px;
+        font: normal 20pt arial;
+        margin-top: 20px;
+        
+    }
+    #somar, #multiplicar, #dividir{
+        width: 100px;
+        height: 30px;
+        margin-left: 10px;
+        background: #b84b4b;
+        border-color: #b84b4b;
+        color: white;
+    }
+    
+    </style>
+</head>
+<body>
+    <h1>Calculadora ultilizando DOM</h1>
+    <input type="number" name="v1" id="v1"> +
+    <input type="number" name="v2" id="v2">
+    <input type="button" value="Somar" id="somar" onclick="somar()" ><br>
+    <input type="number" name="v3" id="v3"> *
+    <input type="number" name="v4" id="v4">
+    <input type="button" value="Multiplicar" id="multiplicar" onclick="multiplicar()"><br>
+    <input type="number" name="v5" id="v5"> /
+    <input type="number" name="v6" id="v6">
+    <input type="button" value="Dividir" id="dividir" onclick="dividir()"><br>
+
+   <p id="resultado">Resultado:</p>
+
+
+
+
+
+
+    <script>
+        var resultado = document.querySelector("#resultado");
+
+        function somar(){
+            var v1 = Number(document.querySelector("#v1").value);
+            var v2 = Number(document.querySelector("#v2").value);
+            var soma = v1+v2;
+
+            resultado.innerHTML = `Resultado da soma de <strong>${v1} + ${v2}</strong> = <strong>${soma}</strong>`;
+
+        }
+        function multiplicar(){
+            var v3 = Number(document.querySelector("#v3").value);
+            var v4 = Number(document.querySelector("#v4").value);
+            var multiplicar = v3*v4;
+
+            resultado.innerHTML = `Resultado da multiplicação de <strong>${v3} x ${v4}</strong> = <strong>${multiplicar}</strong>`
+
+        }
+        function dividir(){
+            var v5 = Number(document.querySelector("#v5").value);
+            var v6 = Number(document.querySelector("#v6").value);
+            var dividir = v5/v6;
+
+            resultado.innerHTML = `Resultado da divisão de <strong>${v5} / ${v6}</strong> = <strong>${dividir}</strong>`
+
+        }
+
+    </script> 
+</body>
+</html>
