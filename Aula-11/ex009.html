@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nacionalidade</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        .titulo{
+            color: rgb(41, 88, 128);
+            font-size: 30pt;
+        }
+        
+        #txtNacao{
+            width: 200px;
+            height: 25px;
+            font-size: 12pt;
+        }
+        
+        input{
+            width: 100px;
+            height: 25px;;
+            font-size: 12pt;
+        }
+        #resultado{
+            margin-top: 20px;
+            font-size: 20pt;
+            color: black;
+        }
+
+        #resultado > #br{
+            color: rgb(19, 151, 69);
+            font-size: 20pt;
+        }
+        #resultado > #es{
+            color: #ad2424;
+            font-size: 20pt;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="titulo">Nacionalidade</h1>
+    <input type="text" name="txtNacao" id="txtNacao" placeholder="Insira seu País...">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="resultado"></div>
+
+
+    <script>
+        function verificar(){
+            var txtNacao = document.querySelector("#txtNacao").value;
+            var resultado = document.querySelector("#resultado");
+            resultado.innerHTML = `Obrigado por inserir seu pais de origem!`
+            if(txtNacao.toUpperCase() == "BRASIL" ){
+                resultado.innerHTML += `<p id="br">Você é Brasileiro!</p>`
+            }else{
+                resultado.innerHTML += `<p id="es">Você é Estrangeiro!</p>`
+            }
+        }
+        
+        
+        
+    </script>
+</body>
+</html>
