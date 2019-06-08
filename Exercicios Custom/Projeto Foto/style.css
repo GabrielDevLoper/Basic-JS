@@ -1,0 +1,59 @@
+body{
+    background:#2a3eb1; 
+}
+
+.cabecalho{
+    text-align: center;
+}
+
+.secao{
+    background: white;
+    margin: auto;
+    padding: 5px;
+    width: 600px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px black; ;
+}
+
+#txtNome{
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
+    font: normal 25px black;
+}
+
+#btnBuscar{
+    
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    
+}
+
+#btnBuscar:hover{
+    background: #00e676;
+}
+
+div{
+    text-align: center;
+    padding: 15px;
+}
+
+#titulo{
+    font: bold 50px arial;
+    color: white;
+    text-shadow: 5px 5px 10px black;
+}
+
+#nome{
+    color:black;
+    text-shadow: 5px 5px 10px black;
+}
+
+.rodape{
+    color: #ab003c;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+
+}
