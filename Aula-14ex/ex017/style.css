@@ -1,0 +1,35 @@
+body{
+    background: #0f60bd;
+    font: normal 15pt arial;
+    
+}
+
+.cabecalho{
+    color: white;
+    text-align: center;
+    text-shadow: 5px 5px 10px #000000d7;
+}
+
+section{
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px #00000077;
+}
+
+.rodape{
+    text-align: center;
+    color: white;
+    font-style: italic;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+#btnGerar{
+    width: 100px;
+    margin-left: 10px;
+}
